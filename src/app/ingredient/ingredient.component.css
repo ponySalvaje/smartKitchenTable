@@ -1,0 +1,47 @@
+html, body     { box-sizing: border-box; 
+    cursor: default }
+*, *:before, 
+*:after         { box-sizing: inherit }
+
+.background {
+    height: 1080px; width: 1920px; background-color: #f9f7f1;
+    background-image: url("https://previews.123rf.com/images/tadamichi/tadamichi1603/tadamichi160300007/55481736-p%C3%A1lida-textura-de-fondo-de-madera-de-color-detalle-de-la-placa-de-madera-dura-veta-horizontal-.jpg");
+    margin: 0px; padding: 0px; border: 0px;
+}
+
+.donut-button   { position: absolute;
+    cursor: pointer }
+
+.r-outer        { width: 100%; height: 100%; top:  0.0%; left:  0.0% }
+.r-middle       { width:  50%; height:  50%; top: 25.0%; left: 25.0% }
+
+.ring           { position: absolute;
+    border-color : hsl(128, 74%, 32%);
+    border-style : solid;
+    border-radius: 50%;
+    transition: all 50ms }
+
+.circle { position: absolute;
+    border-color : hsl(128, 74%, 32%);
+    border-style : solid;
+    border-radius: 50%;
+    transition: all 50ms
+}
+
+.ring:hover     { transform: scale(1.05) }
+.ring:active    { transform: scale(0.95) }
+
+
+[btn]           { box-shadow: inset    0    0    1px hsl(128, 74%, 32%),  /* hide white overflow (quirk) */
+                inset   10px 10px 10px hsla(205, 69%, 8%,.3),  /* inset shadow */
+                         0    0    1px hsl(128, 74%, 32%),  /* hide white overflow (ditto) */
+                        20px 20px 10px hsla(205, 69%, 8%,.4),  /* inner outside shadow */
+                         0    0    1px hsla(205, 69%, 8%,.3) } /* outer outside shadow */
+
+[btn]:hover     { border-color: hsl(128, 74%, 32%);
+    box-shadow: inset 10px 10px 10px hsla(205, 69%, 8%,.4),
+                      20px 20px 10px hsla(205, 69%, 8%,.3) }
+
+[btn]:active    { border-color: hsl(128, 73%, 40%);
+    box-shadow: inset  8px  8px  8px hsla(205, 69%, 8%,.5),
+                      10px 10px 10px hsla(205, 69%, 8%,.4) }
